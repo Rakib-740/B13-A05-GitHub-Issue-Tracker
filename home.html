@@ -37,24 +37,102 @@
     </style>
   </head>
 
-
   <body class="font-geist">
     <!-- navbar -->
     <header>
       <div class="navbar bg-base-100 shadow-sm flex justify-between px-20">
         <div class="flex justify-center items-center gap-1">
-          <img class="w-[36px]" src="./assets/github-logo.png" alt="">
-          <h3 class="text-2xl font-semibold text-[#1F2937]">GitHub Issues Tracker</h3>
+          <img class="w-[36px]" src="./assets/github-logo.png" alt="" />
+          <h3 class="text-2xl font-semibold text-[#1F2937]">
+            GitHub Issues Tracker
+          </h3>
         </div>
         <div class="flex gap-4">
-          <input
-            type="text"
-            placeholder="Search issues..."
-            class="input input-bordered w-24 md:w-auto"
-          />
-        <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
+          <div class="">
+            <label class="input validator join-item">
+              <div
+                class="flex items-center justify-center gap-1 text-[#64748B]"
+              >
+                <i class="fa-brands fa-sistrix"></i>
+                <input type="text" placeholder="Search issues..." required />
+              </div>
+            </label>
+          </div>
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-plus"></i>New Issue
+          </button>
         </div>
       </div>
     </header>
+
+    <main>
+      <!-- tab bar -->
+      <section
+        class="w-11/12 mt-15 mb-4 mx-auto rounded-lg bg-white shadow-sm p-6"
+      >
+        <div class="flex gap-2">
+          <button class="btn btn-primary py-3 px-9">All</button>
+          <button class="btn btn-primary py-3 px-9">Open</button>
+          <button class="btn btn-primary py-3 px-9">Close</button>
+        </div>
+      </section>
+
+      <!-- dashboard -->
+      <section class="w-11/12 mx-auto bg-white shadow-sm rounded-lg">
+        <!-- dashboard counter -->
+        <div class="flex justify-between p-6 shadow-sm">
+          <div class="flex justify-center items-center gap-2">
+            <div class="">
+              <img src="./assets/Aperture.png" alt="" />
+            </div>
+            <div class="">
+              <h3 class="text-[20px]j font-semibold text-[#1F2937]">
+                <span>50</span> Issues
+              </h3>
+              <p class="text-[#64748B]">Track and manage your project issues</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center gap-4">
+            <p><i class="fa-solid fa-circle text-[#00A96E]"></i> Open</p>
+            <p><i class="fa-solid fa-circle text-[#A855F7]"></i> Closed</p>
+          </div>
+        </div>
+
+        <!-- card container -->
+        <div class="grid grid-cols-4 p-6">
+          <div class="flex flex-col gap-3 shadow-sm rounded-lg">
+            <div class="flex flex-col p-4 gap-3 shadow-sm">
+              <div class="flex justify-between">
+                <img src="./assets/Open-Status.png" alt="" />
+                <button class="p-2 border rounded-[100px] text-[12px]">
+                  High
+                </button>
+              </div>
+              <div class="">
+                <h2 class="text-[14px] text-[#1F2937] font-semibold mb-2">
+                  Fix navigation menu on mobile devices
+                </h2>
+                <p class="text-[12px] text-[#64748B] mb-3">
+                  The navigation menu doesn't collapse properly on mobile
+                  devices...
+                </p>
+                <div class="">
+                  <button class="p-2 text-[12px] border rounded-[100px]">
+                    High
+                  </button>
+                  <button class="p-[6px] text-[12px] border rounded-lg">
+                    High
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 flex-col p-4">
+              <p class="text-[12px] text-[#64748B]">#1 by john_doe</p>
+              <p class="text-[12px] text-[#64748B]">1/15/2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
