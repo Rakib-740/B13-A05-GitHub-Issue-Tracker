@@ -30,13 +30,31 @@
       referrerpolicy="no-referrer"
     />
     <!-- styles -->
-     <style>
-      .font-geist{
+    <style>
+      .font-geist {
         font-family: "Geist", sans-serif;
       }
-     </style>
+    </style>
   </head>
-  <body>
-    
+
+
+  <body class="font-geist">
+    <!-- navbar -->
+    <header>
+      <div class="navbar bg-base-100 shadow-sm flex justify-between px-20">
+        <div class="flex justify-center items-center gap-1">
+          <img class="w-[36px]" src="./assets/github-logo.png" alt="">
+          <h3 class="text-2xl font-semibold text-[#1F2937]">GitHub Issues Tracker</h3>
+        </div>
+        <div class="flex gap-4">
+          <input
+            type="text"
+            placeholder="Search issues..."
+            class="input input-bordered w-24 md:w-auto"
+          />
+        <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
