@@ -29,29 +29,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <!-- styles -->
+    <style>
+      .font-geist {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
   </head>
 
-  <body>
-    <section class="max-w-[520px] mx-auto">
-      <form class="">
+  <body class="font-geist">
+    <section class="min-h-screen flex flex-col justify-center items-center">
+      <form class="flex flex-col justify-center items-center">
         <fieldset
-          class="fieldset bg-base-200 border-base-300 rounded-box border p-4"
+          class="fieldset bg-white border-base-300 rounded-box border p-7"
         >
-        <div class="">
-          <img src="./assets/github-logo.png" alt="">
-          <h3>GitHub Issues Tracker</h3>
-        </div>
-          <legend class="fieldset-legend">Login</legend>
+          <div class="flex flex-col justify-center items-center">
+            <img class="mb-6" src="./assets/github-logo.png" alt="" />
+            <h3 class="text-2xl font-semibold mb-1">GitHub Issues Tracker</h3>
+            <p class="text-[#64748B] mb-6">Sign in to manage your issues</p>
+          </div>
 
-          <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
+          <label class="font-semibold">Username</label>
+          <input
+            type="email"
+            class="input w-full px-4 py-4 rounded-md"
+            placeholder="Enter Username"
+          />
+          <p class="text-[#4A00FF]">Default: admin</p>
 
-          <label class="label">Password</label>
-          <input type="password" class="input" placeholder="Password" />
+          <label class="font-semibold">Password</label>
+          <input
+            type="password"
+            class="input w-full px-4 py-4 rounded-md"
+            placeholder="Enter Password"
+          />
+          <p class="text-[#4A00FF]">Default: admin123</p>
 
-          <button class="btn btn-neutral mt-4">Login</button>
+          <button class="btn btn-primary mt-4">Login</button>
+
+          <div class="flex justify-center items-center gap-2 my-6">
+            <hr class="w-1/2 text-[#E4E4E7]" />
+            <p class="text-[#1F2937]">OR</p>
+            <hr class="w-1/2 text-[#E4E4E7]" />
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-center text-[#64748B]">Demo Credentials:</p>
+            <div class="flex flex-col text-center p-6 bg-[#F8FAFC] rounded-md">
+              <p><span class="font-semibold">Username:</span> admin</p>
+              <p><span class="font-semibold">Password:</span> admin123</p>
+            </div>
+          </div>
         </fieldset>
       </form>
     </section>
