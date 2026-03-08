@@ -1,18 +1,21 @@
 // load issues
 async function loadIssue() {
+  showLoading();
   const res = await fetch(
     "https://phi-lab-server.vercel.app/api/v1/lab/issues",
   );
+  
   const json = await res.json();
-
+  stopLoading();
   //   console.log(json.data);
   displayIssues(json.data);
+  
 }
 
 const displayIssues = (issues) => {
   const issueContainer = document.getElementById("issue-container");
 
-  issueContainer.innerHTML = "";
+  // issueContainer.innerHTML = "";
 
   issues.forEach((issue) => {
     const issueCard = document.createElement("div");
