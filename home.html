@@ -40,8 +40,8 @@
   <body class="font-geist">
     <!-- navbar -->
     <header>
-      <div class="navbar bg-base-100 shadow-sm flex justify-between px-20">
-        <div class="flex justify-center items-center gap-1">
+      <div class="navbar bg-base-100 shadow-sm flex flex-col gap-4 md:flex-row md:justify-between px-20">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-1">
           <img class="w-[36px]" src="./assets/github-logo.png" alt="" />
           <h3 class="text-2xl font-semibold text-[#1F2937]">
             GitHub Issues Tracker
@@ -101,7 +101,7 @@
         <!-- issue card container -->
         <div
           id="issue-container"
-          class="grid grid-cols-1 sm:grid-cols-4 gap-4 p-6"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6"
         >
           <!-- <div class="flex flex-col gap-3 shadow-sm rounded-lg">
             <div class="flex flex-col p-4 gap-3 shadow-sm">
@@ -156,8 +156,8 @@
 
     <script src="./scripts/common-functions.js"></script>
     <script src="./scripts/tab.js"></script>
+    <script src="./scripts/search.js"></script>
     <script src="./scripts/allIssue.js"></script>
     <script src="./scripts/modal.js"></script>
-    <script src="./scripts/search.js"></script>
   </body>
 </html>

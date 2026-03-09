@@ -1,9 +1,11 @@
 async function searchSomething(searchText) {
+//   showLoading();
   const res = await fetch(
     `https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`,
   );
   const json = await res.json();
 
+//   stopLoading();
   const searchIssues = json.data;
 
   document.getElementById("all-btn").classList.remove("btn-primary");
