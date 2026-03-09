@@ -99,7 +99,10 @@
         </div>
 
         <!-- issue card container -->
-        <div id="issue-container" class="grid grid-cols-1 sm:grid-cols-4 gap-4 p-6">
+        <div
+          id="issue-container"
+          class="grid grid-cols-1 sm:grid-cols-4 gap-4 p-6"
+        >
           <!-- <div class="flex flex-col gap-3 shadow-sm rounded-lg">
             <div class="flex flex-col p-4 gap-3 shadow-sm">
               <div class="flex justify-between">
@@ -128,12 +131,27 @@
           </div> -->
 
           <!-- loading spinner -->
-           <div id="loading-spin" class="flex justify-center items-center h-[60vh]">
-              <span  class="loading loading-spinner loading-xl"></span>
-           </div>
-           
+          <div
+            id="loading-spin"
+            class="flex justify-center items-center h-[60vh]"
+          >
+            <span class="loading loading-spinner loading-xl"></span>
+          </div>
         </div>
       </section>
+
+      <!-- modal container -->
+
+      <dialog id="modal-issue" class="modal">
+        <div class="modal-box">
+          <div id="modal-container"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <script src="./scripts/common-functions.js"></script>
