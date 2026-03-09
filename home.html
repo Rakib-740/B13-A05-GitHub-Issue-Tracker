@@ -54,11 +54,11 @@
                 class="flex items-center justify-center gap-1 text-[#64748B]"
               >
                 <i class="fa-brands fa-sistrix"></i>
-                <input type="text" placeholder="Search issues..." required />
+                <input id="search-value" type="text" placeholder="Search issues..." required />
               </div>
             </label>
           </div>
-          <button class="btn btn-primary">
+          <button id="search-btn" class="btn btn-primary">
             <i class="fa-solid fa-plus"></i>New Issue
           </button>
         </div>
@@ -87,7 +87,7 @@
             </div>
             <div class="">
               <h3 class="text-[20px]j font-semibold text-[#1F2937]">
-                <span>50</span> Issues
+                <span id="dash-counter">50</span> Issues
               </h3>
               <p class="text-[#64748B]">Track and manage your project issues</p>
             </div>
@@ -158,5 +158,6 @@
     <script src="./scripts/tab.js"></script>
     <script src="./scripts/allIssue.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/search.js"></script>
   </body>
 </html>

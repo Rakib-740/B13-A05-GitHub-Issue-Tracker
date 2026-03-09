@@ -11,7 +11,7 @@ async function issueModal(id) {
   const modal = document.getElementById("modal-issue");
 
   modalContainer.innerHTML = `
-        <div class="space-y-3">
+        <div class="p-6 space-y-3">
                 <h3 class="font-bold text-2xl text-[#1F2937]">${issue.title}</h3>
                 <div class="flex items-center gap-2">
                     <button class="px-4 py-2 text-white rounded-full ${issue.status === "open" ? "bg-[#00A96E]" : "bg-[#A855F7]"}">${issue.status === "open" ? "Opened" : "Closed"}</button>

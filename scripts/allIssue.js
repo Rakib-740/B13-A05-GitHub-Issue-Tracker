@@ -19,6 +19,9 @@ const displayIssues = (issues) => {
   const issueContainer = document.getElementById("issue-container");
 
   // issueContainer.innerHTML = "";
+  const dashCounter = document.getElementById("dash-counter");
+
+  dashCounter.innerText = issues.length;
 
   issues.forEach((issue) => {
     const issueCard = document.createElement("div");
