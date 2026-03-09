@@ -1,3 +1,5 @@
+let issueData = [];
+
 // load issues
 async function loadIssue() {
   showLoading();
@@ -8,7 +10,9 @@ async function loadIssue() {
   const json = await res.json();
   stopLoading();
   //   console.log(json.data);
-  displayIssues(json.data);
+  issueData = json.data;
+  document.getElementById("all-btn").click();
+  displayIssues(issueData);
   
 }
 
