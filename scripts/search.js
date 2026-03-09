@@ -25,5 +25,6 @@ document.getElementById("search-btn").addEventListener("click", function () {
     return;
   } else {
     searchSomething(searchValue);
+    document.getElementById("search-value").value = "";
   }
 });
